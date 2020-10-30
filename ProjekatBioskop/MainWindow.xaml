@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProjekatBioskop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatBioskop"
+        mc:Ignorable="d"
+        Title="Bioskop" Height="400" Width="900"
+        BorderBrush="WhiteSmoke"
+        BorderThickness="4">
+    <Grid>
+        
+        <DataGrid  Name="dataGridCentralni" HorizontalAlignment="Center" Height="auto"  VerticalAlignment="Center" Width="auto" IsReadOnly="True" AlternatingRowBackground="LightGray"  CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="50"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnFilmovi" Content="Filmovi" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="btnFilmovi_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnKupci" Content="Kupci" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="btnKupci_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnLokacije" Content="Lokacije" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="btnLokacije_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnRezervacije" Content="Rezervacije" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="120" Click="btnRezervacije_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnTipKarte" Content="Tipovi karata" HorizontalAlignment="Left" Width="120" Click="btnTipKarte_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnZaposleni" Content="Zaposleni" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="btnZaposleni_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" Background="Transparent" FontFamily="Arial" FontStyle="Italic" FontSize="19" Name="btnZanrFilma" Content="Žanr filma" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="btnZanrFilma_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="50"  VerticalAlignment="Bottom" Width="450" Orientation="Horizontal">
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="20" Foreground="WhiteSmoke" Background="Transparent" Name="btnDodaj" Content="Dodaj" Height="50"  Width="150" Click="btnDodaj_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="20" Foreground="WhiteSmoke" Background="Transparent" Name="btnIzmeni" Content="Izmeni" Height="50"  Width="150" Click="btnIzmeni_Click"/>
+            <Button BorderThickness="3" BorderBrush="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="20" Foreground="WhiteSmoke" Background="Transparent" Name="btnObrisi" Content="Obriši" Height="50"  Width="150" Click="btnObrisi_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

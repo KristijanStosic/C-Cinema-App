@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProjekatBioskop.Forme.Film"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatBioskop.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni film" Height="450" Width="400">
+    <Grid>
+        
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Content="Naziv filma:" HorizontalAlignment="Left" Margin="77,38,0,0" VerticalAlignment="Top"/>
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Content="Opis filma:" HorizontalAlignment="Left" Margin="77,83,0,0" VerticalAlignment="Top"/>
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Content="Trajanje:" HorizontalAlignment="Left" Margin="77,144,0,0" VerticalAlignment="Top"/>
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Content="Jezik:" HorizontalAlignment="Left" Margin="77,184,0,0" VerticalAlignment="Top"/>
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Content="Datum:" HorizontalAlignment="Left" Margin="77,223,0,0" VerticalAlignment="Top"/>
+        <DatePicker  Name="dpDatum" HorizontalAlignment="Left" Margin="225,223,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtNazivFilma" HorizontalAlignment="Left" Height="23" Margin="225,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtOpisFilma" HorizontalAlignment="Left" Height="23" Margin="225,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtTrajanje" HorizontalAlignment="Left" Height="23" Margin="225,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtJezik" HorizontalAlignment="Left" Height="23" Margin="225,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17"  Content="Žanr:" HorizontalAlignment="Left" Margin="77,265,0,0" VerticalAlignment="Top"/>
+        <Label BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Content="Lokacija:" HorizontalAlignment="Left" Margin="77,310,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbZanrFilma" HorizontalAlignment="Left" Margin="225,265,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Zanr" SelectedValuePath="ZanrFilmaID"/>
+        <ComboBox Name="cbLokacija" HorizontalAlignment="Left" Margin="225,310,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Adresa" SelectedValuePath="LokacijaID"/>
+        <Button Background="Transparent" BorderThickness="2" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="164,374,0,0" VerticalAlignment="Top" Width="75" Click="btnSacuvaj_Click"/>
+        <Button Background="Transparent" BorderThickness="2" BorderBrush="WhiteSmoke" Foreground="WhiteSmoke" FontFamily="Arial" FontStyle="Italic" FontSize="17" Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="270,374,0,0" VerticalAlignment="Top" Width="75" Click="btnOtkazi_Click"/>
+    </Grid>
+</Window>
